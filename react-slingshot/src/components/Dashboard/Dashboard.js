@@ -1,82 +1,43 @@
 import React, { Component } from "react";
 import { Link } from "react-router";
+import Owners from "./Owners"
 
 class Dashboard extends Component {
   constructor(props) {
     super(props);
-    this.state ={
-    
-    };
   }
 
-  componentDidMount() {
-    fetch("http://myapi-profstream.herokuapp.com/api/fbaf5b/wines", {
-      method: "GET"
-    })
-    .then((results) => {
-      results.json().then((wines_data) => {
-        this.setState({wines: wines_data})
-      });
-    })
-    .catch((err) => {
-      console.log(err);
-    })
-
-  }
-
-  render() {
+  render (){
     return (
       <div>
-        {console.log(this.state.wines)}
-      {this.state.wines.map((wine)=>{
-        return (
-      <div key={wine.id} className="container well small-container margin-top-20">
+        <nav className="navbar navbar-default">
+            <div className="container-fluid">
+                <div className="navbar-header">
+                    <button type="button" className="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span className="sr-only">Toggle navigation</span>
+                        <span className="icon-bar"></span>
+                        <span className="icon-bar"></span>
+                        <span className="icon-bar"></span>
+                    </button>
+                    <Link to="/" className="navbar-brand">Pet List</Link>
+                </div>
 
-          <div className="row">
-              <div className="col-sm-8">
-                  <div className="md-font">
-                    {wine.name}
-                  </div>
-                  <div>
-                    {wine.year}
-                  </div>
-                  <div>
-                    {wine.grapes}
-                  </div>
-                  <div>
-                      {wine.country}
-                  </div>
-              </div>
-              <div className="col-sm-4 txt-right">
-                  <a href="#">
-                      <i className="fa fa-pencil margin-right-5"></i>
-                      Edit Wine
-                  </a>
-              </div>
-          </div>
+                <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul className="nav navbar-nav">
+                        <li><Link to="/owners/new">Add Owner</Link></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
 
+        <Owners />
 
-
-
-          <div className="row margin-top-20">
-              <div className="col-sm-12">
-                <Link to={`/wines/${wine.id}`} className="btn btn-success">
-                      <i className="fa fa-info-circle"> </i>
-                       Wine Info
-                  </Link>
-                  <a href="#" className="btn btn-danger margin-left-5">
-                      <i className="fa fa-remove"></i>
-                      Remove Wine
-                  </a>
-              </div>
-          </div>
-      </div>
-    );
-      })}
       </div>
 
     );
   }
 }
+
 
 export default Dashboard;
