@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { Link } from 'react-router';
-import Pets from "./Pets";
 
 class Google extends Component {
   constructor(props) {
