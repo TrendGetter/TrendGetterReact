@@ -13,11 +13,42 @@ class Dashboard extends Component {
   render (){
     return (
       <div>
-        <h1>Trend Getter</h1>
-        <Google />
-        <Wiki />
-        <Reddit />
-        <Youtube />
+        <div id="logoBanner">
+          <h1 id="logo">Trend Getter: Trends From the Last 24hrs</h1>
+        </div>
+        <div className="component-align">
+          <div className="parallaxGoogle">
+          </div>
+
+          <div className="elementMargin">
+            <Google />
+          </div>
+          <br/>
+
+          <div className="parallaxWiki">
+          </div>
+
+          <div className="elementMargin" >
+            <Wiki />
+          </div>
+          <br/>
+
+          <div className="parallaxReddit">
+          </div>
+
+          <div className="elementMargin">
+            <Reddit />
+          </div>
+          <br/>
+
+          <div className="parallaxYoutube">
+          </div>
+
+          <div className="elementMargin">
+            <Youtube />
+          </div>
+          <br/>
+        </div>
 
       </div>
 

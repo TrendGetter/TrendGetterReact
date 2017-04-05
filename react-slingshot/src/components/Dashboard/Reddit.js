@@ -26,19 +26,17 @@ class Reddit extends Component {
   render() {
     return (
       <div className="">
-        <h3>Reddit Top Ten</h3>
-        <ol type="1">
-          <li><a href={"https://www.reddit.com" + this.state.redditResults.redditLink1}>{this.state.redditResults.redditResult1}</a></li>
-          <li><a href={"https://www.reddit.com" + this.state.redditResults.redditLink2}>{this.state.redditResults.redditResult2}</a></li>
-          <li><a href={"https://www.reddit.com" + this.state.redditResults.redditLink3}>{this.state.redditResults.redditResult3}</a></li>
-          <li><a href={"https://www.reddit.com" + this.state.redditResults.redditLink4}>{this.state.redditResults.redditResult4}</a></li>
-          <li><a href={"https://www.reddit.com" + this.state.redditResults.redditLink5}>{this.state.redditResults.redditResult5}</a></li>
-          <li><a href={"https://www.reddit.com" + this.state.redditResults.redditLink6}>{this.state.redditResults.redditResult6}</a></li>
-          <li><a href={"https://www.reddit.com" + this.state.redditResults.redditLink7}>{this.state.redditResults.redditResult7}</a></li>
-          <li><a href={"https://www.reddit.com" + this.state.redditResults.redditLink8}>{this.state.redditResults.redditResult8}</a></li>
-          <li><a href={"https://www.reddit.com" + this.state.redditResults.redditLink9}>{this.state.redditResults.redditResult9}</a></li>
-          <li><a href={"https://www.reddit.com" + this.state.redditResults.redditLink10}>{this.state.redditResults.redditResult10}</a></li>
-        </ol>
+        <h3 className="redditItems">reddit Top Ten</h3>
+          <a className="redditItems" target="_blank" href={"https://www.reddit.com" + this.state.redditResults.redditLink1}>{this.state.redditResults.redditResult1}</a>
+          <a className="redditItems" target="_blank" href={"https://www.reddit.com" + this.state.redditResults.redditLink2}>{this.state.redditResults.redditResult2}</a>
+          <a className="redditItems" target="_blank" href={"https://www.reddit.com" + this.state.redditResults.redditLink3}>{this.state.redditResults.redditResult3}</a>
+          <a className="redditItems" target="_blank" href={"https://www.reddit.com" + this.state.redditResults.redditLink4}>{this.state.redditResults.redditResult4}</a>
+          <a className="redditItems" target="_blank" href={"https://www.reddit.com" + this.state.redditResults.redditLink5}>{this.state.redditResults.redditResult5}</a>
+          <a className="redditItems" target="_blank" href={"https://www.reddit.com" + this.state.redditResults.redditLink6}>{this.state.redditResults.redditResult6}</a>
+          <a className="redditItems" target="_blank" href={"https://www.reddit.com" + this.state.redditResults.redditLink7}>{this.state.redditResults.redditResult7}</a>
+          <a className="redditItems" target="_blank" href={"https://www.reddit.com" + this.state.redditResults.redditLink8}>{this.state.redditResults.redditResult8}</a>
+          <a className="redditItems" target="_blank" href={"https://www.reddit.com" + this.state.redditResults.redditLink9}>{this.state.redditResults.redditResult9}</a>
+          <a className="redditItems" target="_blank" href={"https://www.reddit.com" + this.state.redditResults.redditLink10}>{this.state.redditResults.redditResult10}</a>
       </div>
 
     );

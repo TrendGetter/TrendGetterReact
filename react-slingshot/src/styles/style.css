@@ -1,0 +1,138 @@
+/*youtube font*/
+@import url('https://www.fontify.me/wf/cc7dc82fb1921d9d3c6df4c49dc920cb');
+/*google font*/
+@import url('https://www.fontify.me/wf/00d01bea1ab3857311f4d5d65c66ed6d');
+/*wiki font*/
+@import url('https://www.fontify.me/wf/25607a9c328cf9c0ed6abc501a4c6bdd');
+/*reddit font*/
+@import url('https://www.fontify.me/wf/15bb26e86922a3a90178965a861e616f');
+/*logo font*/
+@import url('https://www.fontify.me/wf/2e4b12cdafdafa87a194d89061c5604e');
+
+body{
+  margin: 0;
+  padding: 0;
+}
+html{
+  margin: 0;
+  padding: 0;
+}
+
+.component-align{
+  text-align: center;
+
+}
+.elementMargin{
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.googleItems{
+  display: block;
+  font-family: font121983;
+}
+.wikiItems{
+  display: block;
+  font-family: font2393;
+}
+.redditItems{
+  display: block;
+  font-family: font114514;
+}
+.youtubeItems{
+  display: block;
+  font-family: font73252;
+}
+
+
+
+h1, #logoBanner {
+  margin: 0;
+  height: 150px;
+  line-height: 150px;
+
+}
+
+#logoBanner{
+  background-color: black;
+  margin: 0;
+}
+
+#logo{
+  text-align: center;
+  color: white;
+  font-family: arial;
+}
+
+.parallaxGoogle {
+
+    /* To fix the background image in place while the rest of the element moves */
+    background-attachment: fixed;
+
+    /* Position background image in the center and cover the element */
+    background-size: cover;
+    background-position:top;
+    background-repeat: no-repeat;
+    max-width: 100%;
+
+    /* Set a background image */
+    background-image: url("https://arisavgousti.files.wordpress.com/2016/03/google-thumb.jpg?w=1920&h=768&crop=1");
+
+    /* Set a height */
+    height: 450px;
+}
+
+.parallaxWiki {
+
+    /* To fix the background image in place while the rest of the element moves */
+    background-attachment: fixed;
+
+    /* Position background image in the center and cover the element */
+    background-size: cover;
+    background-position:top;
+    background-repeat: no-repeat;
+    max-width: 100%;
+    /*width: 100%;*/
+
+    /* Set a background image */
+    background-image: url("http://4farda.com/wp-content/uploads/2014/11/wikipedia.jpg");
+
+    /* Set a height */
+    height: 450px;
+}
+
+.parallaxReddit {
+
+    /* To fix the background image in place while the rest of the element moves */
+    background-attachment: fixed;
+    background-size: cover;
+
+    /* Position background image in the center and cover the element */
+    /*background-size: cover;*/
+    background-position: center;
+    background-repeat: no-repeat;
+    max-width: 100%;
+
+    /* Set a background image */
+    background-image: url("https://www.startalkradio.net/wp-content/uploads/2016/04/Reddit_Logo_feat-1.jpg");
+
+    /* Set a height */
+    height: 450px;
+}
+
+.parallaxYoutube {
+
+    /* To fix the background image in place while the rest of the element moves */
+    background-attachment: fixed;
+
+    /* Position background image in the center and cover the element */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    max-width: 100%;
+
+    /* Set a background image */
+    background-image: url("http://www.filmtake.com/wp-content/uploads/2017/03/youtube-logo_32efea1b939f5d4134c5b3edd7fb222d-xl.jpg");
+
+    /* Set a height */
+    height: 450px;
+}

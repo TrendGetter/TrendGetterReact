@@ -26,19 +26,17 @@ class Wiki extends Component {
   render() {
     return (
       <div className="">
-      <h3>Wiki Top Ten</h3>
-        <ol type="1">
-          <li><a href={"https://en.wikipedia.org/wiki/" + this.state.wikiResults.wikiResult1}>{this.state.wikiResults.wikiResult1}</a></li>
-          <li><a href={"https://en.wikipedia.org/wiki/" + this.state.wikiResults.wikiResult2}>{this.state.wikiResults.wikiResult2}</a></li>
-          <li><a href={"https://en.wikipedia.org/wiki/" + this.state.wikiResults.wikiResult3}>{this.state.wikiResults.wikiResult3}</a></li>
-          <li><a href={"https://en.wikipedia.org/wiki/" + this.state.wikiResults.wikiResult4}>{this.state.wikiResults.wikiResult4}</a></li>
-          <li><a href={"https://en.wikipedia.org/wiki/" + this.state.wikiResults.wikiResult5}>{this.state.wikiResults.wikiResult5}</a></li>
-          <li><a href={"https://en.wikipedia.org/wiki/" + this.state.wikiResults.wikiResult6}>{this.state.wikiResults.wikiResult6}</a></li>
-          <li><a href={"https://en.wikipedia.org/wiki/" + this.state.wikiResults.wikiResult7}>{this.state.wikiResults.wikiResult7}</a></li>
-          <li><a href={"https://en.wikipedia.org/wiki/" + this.state.wikiResults.wikiResult8}>{this.state.wikiResults.wikiResult8}</a></li>
-          <li><a href={"https://en.wikipedia.org/wiki/" + this.state.wikiResults.wikiResult9}>{this.state.wikiResults.wikiResult9}</a></li>
-          <li><a href={"https://en.wikipedia.org/wiki/" + this.state.wikiResults.wikiResult10}>{this.state.wikiResults.wikiResult10}</a></li>
-        </ol>
+      <h3 className="wikiItems">WikipediA Top Ten</h3>
+          <a className="wikiItems" target="_blank" href={"https://en.wikipedia.org/wiki/" + this.state.wikiResults.wikiResult1}>{this.state.wikiResults.wikiResult1}</a>
+          <a className="wikiItems" target="_blank" href={"https://en.wikipedia.org/wiki/" + this.state.wikiResults.wikiResult2}>{this.state.wikiResults.wikiResult2}</a>
+          <a className="wikiItems" target="_blank" href={"https://en.wikipedia.org/wiki/" + this.state.wikiResults.wikiResult3}>{this.state.wikiResults.wikiResult3}</a>
+          <a className="wikiItems" target="_blank" href={"https://en.wikipedia.org/wiki/" + this.state.wikiResults.wikiResult4}>{this.state.wikiResults.wikiResult4}</a>
+          <a className="wikiItems" target="_blank" href={"https://en.wikipedia.org/wiki/" + this.state.wikiResults.wikiResult5}>{this.state.wikiResults.wikiResult5}</a>
+          <a className="wikiItems" target="_blank" href={"https://en.wikipedia.org/wiki/" + this.state.wikiResults.wikiResult6}>{this.state.wikiResults.wikiResult6}</a>
+          <a className="wikiItems" target="_blank" href={"https://en.wikipedia.org/wiki/" + this.state.wikiResults.wikiResult7}>{this.state.wikiResults.wikiResult7}</a>
+          <a className="wikiItems" target="_blank" href={"https://en.wikipedia.org/wiki/" + this.state.wikiResults.wikiResult8}>{this.state.wikiResults.wikiResult8}</a>
+          <a className="wikiItems" target="_blank" href={"https://en.wikipedia.org/wiki/" + this.state.wikiResults.wikiResult9}>{this.state.wikiResults.wikiResult9}</a>
+          <a className="wikiItems" target="_blank" href={"https://en.wikipedia.org/wiki/" + this.state.wikiResults.wikiResult10}>{this.state.wikiResults.wikiResult10}</a>
       </div>
 
     );
