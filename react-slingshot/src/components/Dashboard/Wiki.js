@@ -10,7 +10,7 @@ class Wiki extends Component {
   }
 
   componentDidMount() {
-    fetch("http://localhost:8000/wikiApi/", {
+    fetch("https://trendgetterexpress.herokuapp.com/wikiApi/", {
       method: "GET"
     })
     .then((results) => {

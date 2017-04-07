@@ -10,7 +10,7 @@ class Reddit extends Component {
   }
 
   componentDidMount() {
-    fetch("http://localhost:8000/redditApi/", {
+    fetch("https://trendgetterexpress.herokuapp.com/redditApi/", {
       method: "GET"
     })
     .then((results) => {

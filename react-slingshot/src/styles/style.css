@@ -55,12 +55,14 @@ h1, #logoBanner {
 #logoBanner{
   background-color: black;
   margin: 0;
+
 }
 
 #logo{
   text-align: center;
   color: white;
   font-family: arial;
+  
 }
 
 .parallaxGoogle {

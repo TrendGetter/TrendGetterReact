@@ -10,7 +10,7 @@ class Google extends Component {
   }
 
   componentDidMount() {
-    fetch("http://localhost:8000/googleApi/", {
+    fetch("https://trendgetterexpress.herokuapp.com/googleApi", {
       method: "GET"
     })
     .then((results) => {

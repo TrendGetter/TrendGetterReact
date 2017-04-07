@@ -10,7 +10,7 @@ class Youtube extends Component {
   }
 
   componentDidMount() {
-    fetch("http://localhost:8000/youtubeApi/", {
+    fetch("https://trendgetterexpress.herokuapp.com/youtubeApi", {
       method: "GET"
     })
     .then((results) => {
